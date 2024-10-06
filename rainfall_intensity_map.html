@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1fb78dddae0b4c4e1ab1c18a87c2c74a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1fb78dddae0b4c4e1ab1c18a87c2c74a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1fb78dddae0b4c4e1ab1c18a87c2c74a = L.map(
+                "map_1fb78dddae0b4c4e1ab1c18a87c2c74a",
+                {
+                    center: [23.685, 90.3563],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f9bb97a1694f9f8601b66f949c9e8738 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f9bb97a1694f9f8601b66f949c9e8738.addTo(map_1fb78dddae0b4c4e1ab1c18a87c2c74a);
+        
+    
+            var marker_cluster_7ffb073bf5fe48bbade518c557cff370 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_31a18a2435b522ac1cd2fbaa74e33033 = L.circleMarker(
+                [22.362, 91.7845],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.794115890083632, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_6ff242b0395f47c0ff3f04f31e5e87b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d423462f172c7f3ce5cef61b1ad4fd7c = $(`<div id="html_d423462f172c7f3ce5cef61b1ad4fd7c" style="width: 100.0%; height: 100.0%;">Station: Ambagan_ctg Avg Rainfall: 7.94115890083632 mm</div>`)[0];
+                popup_6ff242b0395f47c0ff3f04f31e5e87b9.setContent(html_d423462f172c7f3ce5cef61b1ad4fd7c);
+            
+        
+
+        circle_marker_31a18a2435b522ac1cd2fbaa74e33033.bindPopup(popup_6ff242b0395f47c0ff3f04f31e5e87b9)
+        ;
+
+        
+    
+    
+            var circle_marker_598d1289ce8db1de8172cbc9f3b3ef1b = L.circleMarker(
+                [22.701, 90.3535],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5618622740791581, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_5e5da2297cc74450f82f2762bbf6ec81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44199b41a5e8ac0a41688ada2d8dd2e7 = $(`<div id="html_44199b41a5e8ac0a41688ada2d8dd2e7" style="width: 100.0%; height: 100.0%;">Station: Barisal Avg Rainfall: 5.618622740791581 mm</div>`)[0];
+                popup_5e5da2297cc74450f82f2762bbf6ec81.setContent(html_44199b41a5e8ac0a41688ada2d8dd2e7);
+            
+        
+
+        circle_marker_598d1289ce8db1de8172cbc9f3b3ef1b.bindPopup(popup_5e5da2297cc74450f82f2762bbf6ec81)
+        ;
+
+        
+    
+    
+            var circle_marker_b33bb984d32edb6a602025e00678f7f0 = L.circleMarker(
+                [22.6859, 90.6482],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.604907343857241, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_202b58d15c3555cf2b4890c852371ca2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5443d3c036617f155bff4f2ca18aecf0 = $(`<div id="html_5443d3c036617f155bff4f2ca18aecf0" style="width: 100.0%; height: 100.0%;">Station: Bhola Avg Rainfall: 6.049073438572409 mm</div>`)[0];
+                popup_202b58d15c3555cf2b4890c852371ca2.setContent(html_5443d3c036617f155bff4f2ca18aecf0);
+            
+        
+
+        circle_marker_b33bb984d32edb6a602025e00678f7f0.bindPopup(popup_202b58d15c3555cf2b4890c852371ca2)
+        ;
+
+        
+    
+    
+            var circle_marker_5c24732eebdb79538ab9f3c50a0cee37 = L.circleMarker(
+                [24.8476, 89.3711],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4625714939373141, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_0f0d8927023074d15f17f1679563e570 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e2e814f80db02817fc44a91afe0f0eb = $(`<div id="html_1e2e814f80db02817fc44a91afe0f0eb" style="width: 100.0%; height: 100.0%;">Station: Bogra Avg Rainfall: 4.625714939373141 mm</div>`)[0];
+                popup_0f0d8927023074d15f17f1679563e570.setContent(html_1e2e814f80db02817fc44a91afe0f0eb);
+            
+        
+
+        circle_marker_5c24732eebdb79538ab9f3c50a0cee37.bindPopup(popup_0f0d8927023074d15f17f1679563e570)
+        ;
+
+        
+    
+    
+            var circle_marker_274bf782305312b109c589e714b87e86 = L.circleMarker(
+                [23.2336, 90.671],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5479994998749687, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_37fce393b5b39c5f9dae8ec5ba03cd03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97ed4797f5001ee5dbbb9ce35d2debf7 = $(`<div id="html_97ed4797f5001ee5dbbb9ce35d2debf7" style="width: 100.0%; height: 100.0%;">Station: Chandpur Avg Rainfall: 5.479994998749687 mm</div>`)[0];
+                popup_37fce393b5b39c5f9dae8ec5ba03cd03.setContent(html_97ed4797f5001ee5dbbb9ce35d2debf7);
+            
+        
+
+        circle_marker_274bf782305312b109c589e714b87e86.bindPopup(popup_37fce393b5b39c5f9dae8ec5ba03cd03)
+        ;
+
+        
+    
+    
+            var circle_marker_228751a256ead95359a94bc6ce1ef0b9 = L.circleMarker(
+                [22.3475, 91.8123],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7753000750187546, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_84a3ea42713c90be4a77cf9149b6a9f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9fb9d95a009134e8670bed8e3282018 = $(`<div id="html_f9fb9d95a009134e8670bed8e3282018" style="width: 100.0%; height: 100.0%;">Station: Chittagong Avg Rainfall: 7.753000750187547 mm</div>`)[0];
+                popup_84a3ea42713c90be4a77cf9149b6a9f5.setContent(html_f9fb9d95a009134e8670bed8e3282018);
+            
+        
+
+        circle_marker_228751a256ead95359a94bc6ce1ef0b9.bindPopup(popup_84a3ea42713c90be4a77cf9149b6a9f5)
+        ;
+
+        
+    
+    
+            var circle_marker_9d75c7add6cbbf3b8042f9ea38ff8d9f = L.circleMarker(
+                [23.4607, 91.1809],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5430399719495091, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_bb2efc76d074dedf31cce87f63319c70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7971c2d876ac1ecf7b0b4058f84350fc = $(`<div id="html_7971c2d876ac1ecf7b0b4058f84350fc" style="width: 100.0%; height: 100.0%;">Station: Comilla Avg Rainfall: 5.4303997194950915 mm</div>`)[0];
+                popup_bb2efc76d074dedf31cce87f63319c70.setContent(html_7971c2d876ac1ecf7b0b4058f84350fc);
+            
+        
+
+        circle_marker_9d75c7add6cbbf3b8042f9ea38ff8d9f.bindPopup(popup_bb2efc76d074dedf31cce87f63319c70)
+        ;
+
+        
+    
+    
+            var circle_marker_dfb30ec20312d5d6a92d10aaa508d98f = L.circleMarker(
+                [23.8103, 90.4125],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5490942028985507, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_c15b8c995a7ed24910537b8aef07edd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65c29b3f7b5379b3aaf887ab14cf826a = $(`<div id="html_65c29b3f7b5379b3aaf887ab14cf826a" style="width: 100.0%; height: 100.0%;">Station: Dhaka Avg Rainfall: 5.490942028985507 mm</div>`)[0];
+                popup_c15b8c995a7ed24910537b8aef07edd2.setContent(html_65c29b3f7b5379b3aaf887ab14cf826a);
+            
+        
+
+        circle_marker_dfb30ec20312d5d6a92d10aaa508d98f.bindPopup(popup_c15b8c995a7ed24910537b8aef07edd2)
+        ;
+
+        
+    
+    
+            var circle_marker_8f987af157aa2e906d7afff359071921 = L.circleMarker(
+                [25.6277, 88.6332],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5136889991728701, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_ee782cdfb2d0ef874051575e0c5b53de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8600a4d240cd9bdd5f8865a7319b6bd7 = $(`<div id="html_8600a4d240cd9bdd5f8865a7319b6bd7" style="width: 100.0%; height: 100.0%;">Station: Dinajpur Avg Rainfall: 5.136889991728701 mm</div>`)[0];
+                popup_ee782cdfb2d0ef874051575e0c5b53de.setContent(html_8600a4d240cd9bdd5f8865a7319b6bd7);
+            
+        
+
+        circle_marker_8f987af157aa2e906d7afff359071921.bindPopup(popup_ee782cdfb2d0ef874051575e0c5b53de)
+        ;
+
+        
+    
+    
+            var circle_marker_c208d02ae10c1c27f879a206cf4a0851 = L.circleMarker(
+                [23.607, 89.8347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.49105467856325785, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_68aff5b02f74d6f5d2c73b1d35b3a703 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a21b6dfc43285a916c6b273808bed87 = $(`<div id="html_9a21b6dfc43285a916c6b273808bed87" style="width: 100.0%; height: 100.0%;">Station: Faridpur Avg Rainfall: 4.910546785632579 mm</div>`)[0];
+                popup_68aff5b02f74d6f5d2c73b1d35b3a703.setContent(html_9a21b6dfc43285a916c6b273808bed87);
+            
+        
+
+        circle_marker_c208d02ae10c1c27f879a206cf4a0851.bindPopup(popup_68aff5b02f74d6f5d2c73b1d35b3a703)
+        ;
+
+        
+    
+    
+            var circle_marker_af38102969b1d275d62ab554fc654c59 = L.circleMarker(
+                [23.0159, 91.3969],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.76158357771261, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_0648aeb73c13566971eba790dff0fffc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97c02090fdaea966afcf9d1a0808cc9a = $(`<div id="html_97c02090fdaea966afcf9d1a0808cc9a" style="width: 100.0%; height: 100.0%;">Station: Feni Avg Rainfall: 7.6158357771261 mm</div>`)[0];
+                popup_0648aeb73c13566971eba790dff0fffc.setContent(html_97c02090fdaea966afcf9d1a0808cc9a);
+            
+        
+
+        circle_marker_af38102969b1d275d62ab554fc654c59.bindPopup(popup_0648aeb73c13566971eba790dff0fffc)
+        ;
+
+        
+    
+    
+            var circle_marker_4f188a816a6fa5d91a0596546b808772 = L.circleMarker(
+                [22.3833, 91.125],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8469249934434828, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_2980b84006fbf7f338bb820825838222 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a21a12093e21195347b41e7f19f965c6 = $(`<div id="html_a21a12093e21195347b41e7f19f965c6" style="width: 100.0%; height: 100.0%;">Station: Hatiya Avg Rainfall: 8.469249934434828 mm</div>`)[0];
+                popup_2980b84006fbf7f338bb820825838222.setContent(html_a21a12093e21195347b41e7f19f965c6);
+            
+        
+
+        circle_marker_4f188a816a6fa5d91a0596546b808772.bindPopup(popup_2980b84006fbf7f338bb820825838222)
+        ;
+
+        
+    
+    
+            var circle_marker_29a1b06566c2b5ec9091c7c58dc82057 = L.circleMarker(
+                [24.1333, 89.0667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.4128231525966598, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_da97a96c3667e72017c473623b7cf7cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0f91f2cd9dca8c63f3284ae444a47b5 = $(`<div id="html_a0f91f2cd9dca8c63f3284ae444a47b5" style="width: 100.0%; height: 100.0%;">Station: Ishurdi Avg Rainfall: 4.128231525966598 mm</div>`)[0];
+                popup_da97a96c3667e72017c473623b7cf7cb.setContent(html_a0f91f2cd9dca8c63f3284ae444a47b5);
+            
+        
+
+        circle_marker_29a1b06566c2b5ec9091c7c58dc82057.bindPopup(popup_da97a96c3667e72017c473623b7cf7cb)
+        ;
+
+        
+    
+    
+            var circle_marker_4376791abe39c98258245c394bacd760 = L.circleMarker(
+                [23.168, 89.2086],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.44157900888265544, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_ada0b397c2b96594e89b4bebe2e91532 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_543272d85803da561f3700469204508e = $(`<div id="html_543272d85803da561f3700469204508e" style="width: 100.0%; height: 100.0%;">Station: Jessore Avg Rainfall: 4.415790088826554 mm</div>`)[0];
+                popup_ada0b397c2b96594e89b4bebe2e91532.setContent(html_543272d85803da561f3700469204508e);
+            
+        
+
+        circle_marker_4376791abe39c98258245c394bacd760.bindPopup(popup_ada0b397c2b96594e89b4bebe2e91532)
+        ;
+
+        
+    
+    
+            var circle_marker_0a5587819def0b7bb2eabd8e67379f4d = L.circleMarker(
+                [21.9895, 90.2642],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7320080020005001, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_d495205bb2542c8105f9e723260558d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cc52305ad3522457f625d770cd02c73 = $(`<div id="html_8cc52305ad3522457f625d770cd02c73" style="width: 100.0%; height: 100.0%;">Station: Khepupara Avg Rainfall: 7.320080020005001 mm</div>`)[0];
+                popup_d495205bb2542c8105f9e723260558d8.setContent(html_8cc52305ad3522457f625d770cd02c73);
+            
+        
+
+        circle_marker_0a5587819def0b7bb2eabd8e67379f4d.bindPopup(popup_d495205bb2542c8105f9e723260558d8)
+        ;
+
+        
+    
+    
+            var circle_marker_24d5b61f2dfd14caca819457cbea98a7 = L.circleMarker(
+                [22.8456, 89.5403],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.47467858812529223, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_10462ebd9d256e4498196f637ce01c8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_131f4019f0cd67496365a828d95e52ce = $(`<div id="html_131f4019f0cd67496365a828d95e52ce" style="width: 100.0%; height: 100.0%;">Station: Khulna Avg Rainfall: 4.746785881252922 mm</div>`)[0];
+                popup_10462ebd9d256e4498196f637ce01c8f.setContent(html_131f4019f0cd67496365a828d95e52ce);
+            
+        
+
+        circle_marker_24d5b61f2dfd14caca819457cbea98a7.bindPopup(popup_10462ebd9d256e4498196f637ce01c8f)
+        ;
+
+        
+    
+    
+            var circle_marker_a4b151a9faf326e3e05fc3fb4e9875f8 = L.circleMarker(
+                [21.8167, 91.8667],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7937403993855606, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_80c076d76df1f61a9f86673d230df2aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d13d49ffd5c2726e3480a40be4a6e38f = $(`<div id="html_d13d49ffd5c2726e3480a40be4a6e38f" style="width: 100.0%; height: 100.0%;">Station: Kutubdia Avg Rainfall: 7.9374039938556065 mm</div>`)[0];
+                popup_80c076d76df1f61a9f86673d230df2aa.setContent(html_d13d49ffd5c2726e3480a40be4a6e38f);
+            
+        
+
+        circle_marker_a4b151a9faf326e3e05fc3fb4e9875f8.bindPopup(popup_80c076d76df1f61a9f86673d230df2aa)
+        ;
+
+        
+    
+    
+            var circle_marker_22342f5d83acceb6c14b18d4a4b4dc86 = L.circleMarker(
+                [23.1644, 90.189],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.525889164598842, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_d8cc44743de0e5acb8c2055eb553af83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ebc72a67338361c3e1e5994390c22990 = $(`<div id="html_ebc72a67338361c3e1e5994390c22990" style="width: 100.0%; height: 100.0%;">Station: Madaripur Avg Rainfall: 5.25889164598842 mm</div>`)[0];
+                popup_d8cc44743de0e5acb8c2055eb553af83.setContent(html_ebc72a67338361c3e1e5994390c22990);
+            
+        
+
+        circle_marker_22342f5d83acceb6c14b18d4a4b4dc86.bindPopup(popup_d8cc44743de0e5acb8c2055eb553af83)
+        ;
+
+        
+    
+    
+            var circle_marker_c5b159396c8702cd05bf917528769005 = L.circleMarker(
+                [22.8691, 91.094],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8138052568697731, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_657fe1d70d074d5af629d03fc3f0106d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb207126d9d7ef7e63391baa67d06c8f = $(`<div id="html_fb207126d9d7ef7e63391baa67d06c8f" style="width: 100.0%; height: 100.0%;">Station: Maijdee Court Avg Rainfall: 8.13805256869773 mm</div>`)[0];
+                popup_657fe1d70d074d5af629d03fc3f0106d.setContent(html_fb207126d9d7ef7e63391baa67d06c8f);
+            
+        
+
+        circle_marker_c5b159396c8702cd05bf917528769005.bindPopup(popup_657fe1d70d074d5af629d03fc3f0106d)
+        ;
+
+        
+    
+    
+            var circle_marker_8a63c5d243e298070ea2fdad60348f32 = L.circleMarker(
+                [22.4884, 89.598],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5172146401985112, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_b39a4bb48f156a2d5bc9dd04c659d58d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b65f84369eb47db7be8ef120f05b993c = $(`<div id="html_b65f84369eb47db7be8ef120f05b993c" style="width: 100.0%; height: 100.0%;">Station: Mongla Avg Rainfall: 5.1721464019851116 mm</div>`)[0];
+                popup_b39a4bb48f156a2d5bc9dd04c659d58d.setContent(html_b65f84369eb47db7be8ef120f05b993c);
+            
+        
+
+        circle_marker_8a63c5d243e298070ea2fdad60348f32.bindPopup(popup_b39a4bb48f156a2d5bc9dd04c659d58d)
+        ;
+
+        
+    
+    
+            var circle_marker_4de411e0b6f5705bf6e1128b5b8d8353 = L.circleMarker(
+                [24.7471, 90.4203],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.563806909174102, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_26b3bd46337fca9cab2f6c3c0a154903 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef3dbce21abc46197852ddfd8d283f0f = $(`<div id="html_ef3dbce21abc46197852ddfd8d283f0f" style="width: 100.0%; height: 100.0%;">Station: Mymensingh Avg Rainfall: 5.638069091741021 mm</div>`)[0];
+                popup_26b3bd46337fca9cab2f6c3c0a154903.setContent(html_ef3dbce21abc46197852ddfd8d283f0f);
+            
+        
+
+        circle_marker_4de411e0b6f5705bf6e1128b5b8d8353.bindPopup(popup_26b3bd46337fca9cab2f6c3c0a154903)
+        ;
+
+        
+    
+    
+            var circle_marker_32a62162a9af9722f432e31e8814dd12 = L.circleMarker(
+                [22.3596, 90.329],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6802355350742448, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_7f23b8b9cbd726465a38b32738df654a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a26e08b5207d7e2a6616ed2fd93ad731 = $(`<div id="html_a26e08b5207d7e2a6616ed2fd93ad731" style="width: 100.0%; height: 100.0%;">Station: Patuakhali Avg Rainfall: 6.802355350742448 mm</div>`)[0];
+                popup_7f23b8b9cbd726465a38b32738df654a.setContent(html_a26e08b5207d7e2a6616ed2fd93ad731);
+            
+        
+
+        circle_marker_32a62162a9af9722f432e31e8814dd12.bindPopup(popup_7f23b8b9cbd726465a38b32738df654a)
+        ;
+
+        
+    
+    
+            var circle_marker_761bf5119454d68fe863274850fafe47 = L.circleMarker(
+                [24.3745, 88.6042],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.39302244039270684, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_a6691cc2e7109e806301e2c9ced0beb5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f38f5ebe679dbe458978d809d505c2be = $(`<div id="html_f38f5ebe679dbe458978d809d505c2be" style="width: 100.0%; height: 100.0%;">Station: Rajshahi Avg Rainfall: 3.9302244039270686 mm</div>`)[0];
+                popup_a6691cc2e7109e806301e2c9ced0beb5.setContent(html_f38f5ebe679dbe458978d809d505c2be);
+            
+        
+
+        circle_marker_761bf5119454d68fe863274850fafe47.bindPopup(popup_a6691cc2e7109e806301e2c9ced0beb5)
+        ;
+
+        
+    
+    
+            var circle_marker_710aceab93e5f38e77b776ffa7c0d37f = L.circleMarker(
+                [22.6375, 92.2027],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6716884008236101, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_648b84b2756e9d597bd7a4d340941838 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7b449cee5d012e42b3f9e4d08f47559 = $(`<div id="html_b7b449cee5d012e42b3f9e4d08f47559" style="width: 100.0%; height: 100.0%;">Station: Rangamati Avg Rainfall: 6.716884008236102 mm</div>`)[0];
+                popup_648b84b2756e9d597bd7a4d340941838.setContent(html_b7b449cee5d012e42b3f9e4d08f47559);
+            
+        
+
+        circle_marker_710aceab93e5f38e77b776ffa7c0d37f.bindPopup(popup_648b84b2756e9d597bd7a4d340941838)
+        ;
+
+        
+    
+    
+            var circle_marker_9625f29e857e768cfee4602f510931ed = L.circleMarker(
+                [25.7439, 89.2752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.5850806451612903, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_7d1c902c3812d4829a867b506c4a8189 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a7834c88b738d433f4419d9b6f7f55c = $(`<div id="html_0a7834c88b738d433f4419d9b6f7f55c" style="width: 100.0%; height: 100.0%;">Station: Rangpur Avg Rainfall: 5.850806451612903 mm</div>`)[0];
+                popup_7d1c902c3812d4829a867b506c4a8189.setContent(html_0a7834c88b738d433f4419d9b6f7f55c);
+            
+        
+
+        circle_marker_9625f29e857e768cfee4602f510931ed.bindPopup(popup_7d1c902c3812d4829a867b506c4a8189)
+        ;
+
+        
+    
+    
+            var circle_marker_dda4296aae7716d4de4ce3cb4e3080c5 = L.circleMarker(
+                [22.4887, 91.4581],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.9714038231780167, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_b6f99728a040de0d679813dc5da2b785 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4887c847ead61ce55ec3529bbec25450 = $(`<div id="html_4887c847ead61ce55ec3529bbec25450" style="width: 100.0%; height: 100.0%;">Station: Sandwip Avg Rainfall: 9.714038231780167 mm</div>`)[0];
+                popup_b6f99728a040de0d679813dc5da2b785.setContent(html_4887c847ead61ce55ec3529bbec25450);
+            
+        
+
+        circle_marker_dda4296aae7716d4de4ce3cb4e3080c5.bindPopup(popup_b6f99728a040de0d679813dc5da2b785)
+        ;
+
+        
+    
+    
+            var circle_marker_fa184186037ee4e2d0b5ed9cca5ff2e7 = L.circleMarker(
+                [22.7085, 89.071],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.44509265614275906, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_be1a75833c5002ee5a008b7e98b90e43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b00527cc64447d47c7b89d8c0f0a1f1c = $(`<div id="html_b00527cc64447d47c7b89d8c0f0a1f1c" style="width: 100.0%; height: 100.0%;">Station: Satkhira Avg Rainfall: 4.450926561427591 mm</div>`)[0];
+                popup_be1a75833c5002ee5a008b7e98b90e43.setContent(html_b00527cc64447d47c7b89d8c0f0a1f1c);
+            
+        
+
+        circle_marker_fa184186037ee4e2d0b5ed9cca5ff2e7.bindPopup(popup_be1a75833c5002ee5a008b7e98b90e43)
+        ;
+
+        
+    
+    
+            var circle_marker_94d48eb4712c51c6585b7e8bbd4aaa7f = L.circleMarker(
+                [22.6196, 91.6592],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.8339986559139785, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_e1517812d551887143bbe7e639952561 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b0c15215689375741c1f4c3e806c805 = $(`<div id="html_0b0c15215689375741c1f4c3e806c805" style="width: 100.0%; height: 100.0%;">Station: Sitakunda Avg Rainfall: 8.339986559139785 mm</div>`)[0];
+                popup_e1517812d551887143bbe7e639952561.setContent(html_0b0c15215689375741c1f4c3e806c805);
+            
+        
+
+        circle_marker_94d48eb4712c51c6585b7e8bbd4aaa7f.bindPopup(popup_e1517812d551887143bbe7e639952561)
+        ;
+
+        
+    
+    
+            var circle_marker_3bb8d82abb4b63dd1b9a80043d44c4b7 = L.circleMarker(
+                [24.3065, 91.7296],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.6074742870500234, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_54327be03144f3448902fd8b8f748c69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cd2f0559e532705dbef8b12e66f7efe = $(`<div id="html_7cd2f0559e532705dbef8b12e66f7efe" style="width: 100.0%; height: 100.0%;">Station: Srimangal Avg Rainfall: 6.074742870500233 mm</div>`)[0];
+                popup_54327be03144f3448902fd8b8f748c69.setContent(html_7cd2f0559e532705dbef8b12e66f7efe);
+            
+        
+
+        circle_marker_3bb8d82abb4b63dd1b9a80043d44c4b7.bindPopup(popup_54327be03144f3448902fd8b8f748c69)
+        ;
+
+        
+    
+    
+            var circle_marker_a89322d7d0f390d963e105f92a447609 = L.circleMarker(
+                [24.8949, 91.8687],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.094588592800374, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_971efbc14e044f5effdedbe3220232d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b6f32751e498f37438d96be9ca9a6a4 = $(`<div id="html_9b6f32751e498f37438d96be9ca9a6a4" style="width: 100.0%; height: 100.0%;">Station: Sylhet Avg Rainfall: 10.94588592800374 mm</div>`)[0];
+                popup_971efbc14e044f5effdedbe3220232d8.setContent(html_9b6f32751e498f37438d96be9ca9a6a4);
+            
+        
+
+        circle_marker_a89322d7d0f390d963e105f92a447609.bindPopup(popup_971efbc14e044f5effdedbe3220232d8)
+        ;
+
+        
+    
+    
+            var circle_marker_13eb851c91676052dc39d6b57eb7d249 = L.circleMarker(
+                [24.2498, 89.9166],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.47911290322580646, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_737e8ba3701b9818102ea0d695e4c3ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa6fd48a9233e3b2e244bf436c5b983 = $(`<div id="html_0aa6fd48a9233e3b2e244bf436c5b983" style="width: 100.0%; height: 100.0%;">Station: Tangail Avg Rainfall: 4.791129032258064 mm</div>`)[0];
+                popup_737e8ba3701b9818102ea0d695e4c3ce.setContent(html_0aa6fd48a9233e3b2e244bf436c5b983);
+            
+        
+
+        circle_marker_13eb851c91676052dc39d6b57eb7d249.bindPopup(popup_737e8ba3701b9818102ea0d695e4c3ce)
+        ;
+
+        
+    
+    
+            var circle_marker_bf09dc69dfb4f40018bd4f1611f7e950 = L.circleMarker(
+                [20.8636, 92.301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1043413978494623, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_c9f4375c1cd5ef310770c9c4e3a0150a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b7ac43e68aa7ff59e68bb939adec9b2 = $(`<div id="html_2b7ac43e68aa7ff59e68bb939adec9b2" style="width: 100.0%; height: 100.0%;">Station: Teknaf Avg Rainfall: 11.043413978494623 mm</div>`)[0];
+                popup_c9f4375c1cd5ef310770c9c4e3a0150a.setContent(html_2b7ac43e68aa7ff59e68bb939adec9b2);
+            
+        
+
+        circle_marker_bf09dc69dfb4f40018bd4f1611f7e950.bindPopup(popup_c9f4375c1cd5ef310770c9c4e3a0150a)
+        ;
+
+        
+    
+    
+            var circle_marker_322d93f214d3b8fd141b045c0f75b47a = L.circleMarker(
+                [23.6402, 88.8419],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.39359639016897086, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_7ffb073bf5fe48bbade518c557cff370);
+        
+    
+        var popup_efd57b11551f9033037ce57a51d76b79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_91133d4aaf00e791bc2bd1f2e9285b83 = $(`<div id="html_91133d4aaf00e791bc2bd1f2e9285b83" style="width: 100.0%; height: 100.0%;">Station: chuadanga Avg Rainfall: 3.9359639016897083 mm</div>`)[0];
+                popup_efd57b11551f9033037ce57a51d76b79.setContent(html_91133d4aaf00e791bc2bd1f2e9285b83);
+            
+        
+
+        circle_marker_322d93f214d3b8fd141b045c0f75b47a.bindPopup(popup_efd57b11551f9033037ce57a51d76b79)
+        ;
+
+        
+    
+    
+            marker_cluster_7ffb073bf5fe48bbade518c557cff370.addTo(map_1fb78dddae0b4c4e1ab1c18a87c2c74a);
+        
+</script>
+</html>
